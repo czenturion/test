@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #a7a7a7;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 4em;
+    background: linear-gradient(270deg, #ffc641, #e06500);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: colorShift 5s linear infinite;
+}
+
+@keyframes colorShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
